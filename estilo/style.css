@@ -32,10 +32,6 @@ p {
     text-align: justify;
     line-height: 2em;
 }
-body {
-    background-color:#c5ebd6;
-    font-family: var(--fonte-padrao);
-}
 
 header {
     background-color: var(--cor4);
@@ -44,6 +40,17 @@ header {
     padding-top: 40px;
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
     
+}
+
+.inicio {
+    display: grid;
+
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 header > h1 {
@@ -56,17 +63,16 @@ header > h1 {
 }
 
 header > p {
-    
     font-family: var(--fonte-padrao);
     font-size: 1.2em;
-    max-width: 600px;
+    max-width: 700px;
     padding-left: 10px;
     padding-right: 10px;
     margin: auto;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.24);
     padding-bottom: 50px;
     color: white
-    
+
 }
 
 nav {
@@ -87,6 +93,11 @@ nav > a {
 nav > a:hover {
     background-color: var(--cor3);
     color:var(--cor5);
+}
+
+body {
+    background-color:#c5ebd6;
+    font-family: var(--fonte-padrao);
 }
 
 a.externo::after {
